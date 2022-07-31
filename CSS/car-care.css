@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+/*************** Header ************/
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(29, 118, 192);
+    width: 100%;
+}
+#navbar {
+    display: flex;
+    flex-direction: row;
+    height: 3em;
+}
+#navbar #logo {
+    margin: 10px;
+}
+#logo  a {
+    margin-left: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    flex: 2;
+    margin: 5px;
+    margin-left: 2em;
+    width: 70%;
+    justify-content: right;
+    /* border: 1px solid blue; */
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-direction: row;
+    padding: 8px 16px;
+}
+nav ul li {
+    display: flex;
+    justify-items: right;
+    margin-top: -10px;
+   
+}
+nav ul li a {
+    margin-left: 3em;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    padding: 15px 16px;
+}
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: rgb(221, 102, 128);
+}
+nav ul li p {
+    margin-left: 2em;
+    color: white;
+}
+
+/**************** Main *****************/
+main {
+    display: flex;
+    flex-direction: row;
+    flex: 12;
+    width: 99.9%;
+    background-color: #ccc;
+    padding: 1.7em 0;
+}
+.content {
+    display: flex;
+    background-color: white;
+    margin: 2em 0;
+    margin-left: 5em;
+    margin-right: 5em;
+    width: 100%;
+    /* height: 55vh; */
+}
+.imagae {
+    padding: 5px 0;
+    width: 70%;
+}
+img {
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    height: 95%;
+    width: 100%;
+}
+.info_service1 {
+    width: 100%;
+    margin-left: 3em;
+}
+.info_service1 p {
+    /* font-family: ; */
+    font-size: 17px;
+}
+.info_service1 p span {
+    font-size: 18px;
+    font-weight: 540;
+    color: red;
+    font-style: italic;
+}
+.info_service1 h3 {
+    font-size: 20px;
+}
+ul li {
+    font-size: 17px;
+}
+.offer_price p,
+.offer_price p span {
+    font-weight: bold;
+}
+.offer_price .price_1 {
+    color: black;
+    text-decoration: line-through;
+}
+.button_book button {
+    padding: 10px 18px;
+    margin-bottom: 4em;
+    width: 14em;
+    background-color: rgb(255, 112, 29);
+    border: none;
+}
+.button_book button a {
+    font-size: 16px;
+    font-weight: 540;
+    color: white;
+    text-decoration: none;
+}
+
+
+/***************** Footer *************/
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(29, 118, 192);
+}
+footer p {
+    font-size: 15px;
+    color: white;
+}

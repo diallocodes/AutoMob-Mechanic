@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  
+}
+/*************** Header ************/
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(29, 118, 192);
+}
+#navbar {
+    display: flex;
+    flex-direction: row;
+    height: 3em;
+}
+#navbar #logo {
+    margin: 10px;
+}
+#logo  a {
+    margin-left: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    flex: 2;
+    margin: 5px;
+    margin-left: 2em;
+    width: 70%;
+    justify-content: right;
+    /* border: 1px solid blue; */
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-direction: row;
+    padding: 8px 16px;
+}
+nav ul li {
+    display: flex;
+    justify-items: right;
+    margin-top: -10px;
+   
+}
+nav ul li a {
+    margin-left: 3em;
+    font-size: 17px;
+    text-decoration: none;
+    color: white;
+    padding: 15px 16px;
+}
+nav ul li a:hover {
+    background-color: rgb(221, 102, 128);
+}
+nav ul li p {
+    margin-left: 2em;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+/**************** Main *****************/
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 12;
+    width: 100%;
+    justify-content: center;
+    animation-name: slide;
+    animation-duration: 15s;
+    animation-direction: normal;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+/******* Animation *******/
+@keyframes slide {
+    0% {
+        background-image: url("/images/background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+     25% {
+        background-image: url("/images/background2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+    }
+    50% {
+        background-image: url("/images/background3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    100% {
+        background-image: url("/images/background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center
+    } 
+}
+    .article {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+    .article p {
+        font-size: 17px;
+        font-weight: 500;
+        color: white;
+    }
+    .all_section {
+        display: flex;
+        height: 66vh;
+        width: 94%;
+        flex: 4;
+        margin-left: 4em;
+        margin-bottom: 2.9em;
+    }
+    .all_section section {
+        display: flex;
+    }
+    .section_1 img {
+        height: 23em;
+    }
+    
+    .section_2 {
+        display: flex;
+        flex: 4;
+        flex-direction: column;
+        /* border: 1px solid blue; */
+    }
+    .infos {
+        display: flex;
+        /* border: 1px solid blue; */
+    }
+    .infos p {
+        margin-left: 20px;
+        font-size: 17px;
+        color: white;
+    }
+    .article_1 {
+       margin: -15px;
+    }
+    .article_1 h3,  
+    .article_1 p {
+        color: white;
+    }
+    .article_1 span {
+        border: 3px solid #ccc;
+        border-radius: 50%;
+        padding: 4px 10px;
+        margin-left: 2em;
+        margin-right: 10px;
+    }
+    .article_1 p {
+        margin-left: 5em;
+    }
+    /******** Button Book Service *******/
+    .button_book {
+        display: flex;
+        margin-left: 18em;
+    }
+    .button_book button {
+        display: flex;
+        background-color: rgb(238, 135, 50);
+        padding: 14px 50px;
+        margin-top: 10px;
+        border: none;
+    }
+    .button_book button a {
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        color: white;
+    }
+
+/***************** Footer *************/
+footer {
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 0.6em; */
+    /* border: 1px solid blue; */
+    justify-content: center;
+    background-color: rgb(29, 118, 192);
+}
+footer p {
+    font-size: 16px;
+    color: white;
+}
+
+/************** Responsive Design *******/
+@media (max-width: 900px) {
+    body {
+        margin: 0;
+        padding: 0;
+        /* max-width: 130%; */
+        width: 150%;
+    }
+    main {
+        margin: 0 auto;
+        animation-name: slide;
+        animation-duration: 15s;
+        animation-direction: normal;
+       
+    }
+    nav {
+        display: none;
+        position: absolute;
+        background-color: rgb(29, 118, 192);
+        right: 0;
+        top: 0;
+
+    }
+    nav li:hover { 
+        display: inline-block;
+        background-color: rgb(29, 118, 192);
+        transition: 0.3s ease;
+    }
+    section {
+        margin-left: -2em   ;
+    }
+    .all_section {
+        display: inline-block;
+        
+    }
+    .infos {
+        display: inline-block;
+    }
+    .infos p {
+        margin-left: -3.5em;
+        font-size: 16px;
+    }
+    .article_1 p,
+    .article_1 span{
+        margin-left: -2em;
+    }
+    .button_book {
+        width: 90%;
+        margin: 0 auto;
+    }
+    footer {
+        width: 70%;
+    }
+}

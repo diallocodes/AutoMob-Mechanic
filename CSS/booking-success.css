@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+/*************** Header ************/
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(29, 118, 192);
+    width: 100%;
+}
+#navbar {
+    display: flex;
+    flex-direction: row;
+    height: 3em;
+}
+#navbar #logo {
+    margin: 10px;
+}
+#logo  a {
+    margin-left: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    flex: 2;
+    margin: 5px;
+    margin-left: 2em;
+    width: 70%;
+    justify-content: right;
+    /* border: 1px solid blue; */
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-direction: row;
+    padding: 8px 16px;
+}
+nav ul li {
+    display: flex;
+    justify-items: right;
+    margin-top: -10px;
+   
+}
+nav ul li a {
+    margin-left: 3em;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    padding: 15px 16px;
+}
+nav ul li a:hover {
+    background-color: rgb(221, 102, 128);
+}
+nav ul li p {
+    margin-left: 2em;
+    color: white;
+}
+
+/**************** Main *****************/
+main {
+    display: flex;
+    flex-direction: row;
+    flex: 12;
+    width: 99.9%;
+    padding: 4.7em 0;
+}
+.content {
+    display: flex;
+    margin: 2em 0;
+    margin-left: 5em;
+    margin-right: 5em;
+    width: 100%;
+}
+.image {
+    padding: 5px 0;
+    width: 70%;
+}
+img {
+    margin-top: 25px;
+    margin-left: 15px;
+    height: 80%;
+    width: 100%;
+}
+.info {
+    width: 100%;
+    margin-left: 3em;
+}
+.info p {
+    font-size: 18px;
+}
+.info h3 {
+    font-size: 20px;
+}
+
+/***************** Footer *************/
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(29, 118, 192);
+}
+footer p {
+    font-size: 15px;
+    color: white;
+}
